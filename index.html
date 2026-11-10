@@ -342,6 +342,113 @@ font-family: 'IBM Plex Mono', monospace;
 font-size: 0.76rem;
 color: var(--rust);
 }
+/* ---------- NEU: ZWEI ZUHAUSE ---------- */
+.neu-banner {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 26px;
+padding: 7px 14px 7px 8px;
+border: 1px solid var(--sage);
+border-radius: 30px;
+text-decoration: none;
+font-size: 0.92rem;
+color: var(--ink);
+background: rgba(63,90,74,0.06);
+transition: background 0.2s;
+}
+.neu-banner:hover { background: rgba(63,90,74,0.13); }
+.neu-banner .pill {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 0.68rem;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+background: var(--sage);
+color: #fdf9f1;
+padding: 3px 9px;
+border-radius: 20px;
+}
+.zwei-zuhause {
+scroll-margin-top: 80px;
+margin-top: 2px;
+background: var(--card);
+border-top: 4px solid var(--sage);
+padding: 56px 48px 52px;
+display: grid;
+grid-template-columns: 1.3fr 1fr;
+gap: 56px;
+}
+@media (max-width: 900px) {
+.zwei-zuhause { grid-template-columns: 1fr; gap: 36px; padding: 44px 28px; }
+}
+.zwei-zuhause .eyebrow { color: var(--sage); display: block; margin-bottom: 16px; opacity: 1; }
+.zwei-zuhause h3 {
+font-size: clamp(2rem, 4.2vw, 2.8rem);
+color: var(--ink);
+}
+.zwei-zuhause .subtitle {
+margin-top: 10px;
+font-family: 'Fraunces', serif;
+font-style: italic;
+font-size: 1.15rem;
+color: var(--sage);
+}
+.zwei-zuhause .desc {
+margin-top: 22px;
+color: var(--ink-soft);
+font-size: 1rem;
+}
+.zwei-zuhause .desc + .desc { margin-top: 14px; }
+.zwei-zuhause .status {
+margin-top: 24px;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 0.76rem;
+color: var(--sage);
+}
+.zwei-zuhause .buy-btn {
+margin-top: 22px;
+display: inline-block;
+text-decoration: none;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 0.8rem;
+letter-spacing: 0.03em;
+padding: 12px 20px;
+border-radius: 2px;
+background: var(--sage);
+color: #fdf9f1;
+}
+.zz-aufbau {
+align-self: center;
+border-left: 1px solid var(--line);
+padding-left: 40px;
+}
+@media (max-width: 900px) {
+.zz-aufbau { border-left: none; padding-left: 0; border-top: 1px solid var(--line); padding-top: 30px; }
+}
+.zz-aufbau .eyebrow { color: var(--ink-soft); opacity: 0.8; }
+.zz-teil {
+margin-top: 20px;
+}
+.zz-teil strong {
+display: block;
+font-family: 'Fraunces', serif;
+font-weight: 600;
+font-size: 1.12rem;
+color: var(--ink);
+}
+.zz-teil span {
+display: block;
+margin-top: 3px;
+font-size: 0.93rem;
+color: var(--ink-soft);
+}
+.zz-fakten {
+margin-top: 28px;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 0.74rem;
+color: var(--ink-soft);
+line-height: 1.9;
+}
 /* ---------- MANIFEST ---------- */
 .manifest {
 background: var(--dark-bg);
@@ -475,6 +582,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <div class="brand">Dr. Manfred Schmidt</div>
 <div class="navlinks">
 <a href="#buecher">Bücher</a>
+<a href="#zwei-zuhause">Neu: Zwei Zuhause</a>
 <a href="#manifest">Manifest</a>
 <a href="#autor">Autor</a>
 <a href="#kontakt">Kontakt</a>
@@ -483,6 +591,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 </nav>
 <header class="hero">
 <div class="wrap">
+<a class="neu-banner" href="#zwei-zuhause"><span class="pill">Neu</span>„Zwei Zuhause“ – das Kinderbuch erscheint bald →</a>
 <span class="eyebrow">Drei Bücher · eine Frage</span>
 <h1>Gehen. Bleiben.<br><em>Sich selbst</em> begegnen.</h1>
 <p class="lede">Drei Bücher über die leise Sehnsucht, die viele von uns manchmal ergreift – und über die Klarheit, die eigene Entscheidung zu finden. Kein Ratgeber mit Checklisten. Drei sehr unterschiedliche Wege dorthin.</p>
@@ -554,13 +663,22 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <p class="status">Erschienen bei ROMEON Verlag</p>
 </article>
 </div>
-<div class="ausblick reveal">
-<span class="eyebrow">Das nächste Buch · in Entwicklung</span>
-<div class="ausblick-card">
-<h3>Zwischen zwei Welten</h3>
-<div class="subtitle">Ein Buch für Kinder und Jugendliche, die umziehen müssen – und ihre Eltern</div>
-<p class="desc">Kinder und Jugendliche werden oft als „flexibel" abgetan, doch für sie kann Auswandern den Verlust von Freunden, Sprache und Identität bedeuten. Dieses Buch (für 10–15-Jährige, zum Selberlesen, in Jugendsprache geschrieben) gibt ihnen eine Stimme – als ehrlicher Dialog zwischen zwei Geschwistern, über Wut, Ohnmacht und die Suche nach einem neuen Zuhause im eigenen Herzen. Geschrieben für Kinder und Eltern gleichermaßen: Beide sollen es lesen – und dabei lernen, sich besser zu verstehen und aufeinander einzulassen.</p>
-<p class="status">🚧 Konzept steht – in Entwicklung</p>
+<div class="zwei-zuhause reveal" id="zwei-zuhause">
+<div>
+<span class="eyebrow">Neu · Erscheint in Kürze</span>
+<h3>Zwei Zuhause</h3>
+<div class="subtitle">Ein Buch für Kinder, die umziehen müssen – und ihre Eltern</div>
+<p class="desc">Leon ist elf, als seine Familie nach Bergen in Norwegen auswandert. In 21 Kapiteln erzählt er selbst, was dieser Schritt mit ihm macht: mit dem Abschied, der Wut, dem fremden Alltag – und mit der Frage, ob man zwei Zuhause haben kann.</p>
+<p class="desc">Kinder werden bei einem Umzug oft als „flexibel“ abgetan. Für sie kann er den Verlust von Freunden, Sprache und Vertrautem bedeuten. Geschrieben im Geist von „Dies ist kein Aufbruch“: ehrlich und ohne Beschönigung, diesmal aus der Sicht derer, die bei der Entscheidung meist nicht gefragt werden. Ein Buch, das Kinder und Eltern gemeinsam lesen können – um einander besser zu verstehen.</p>
+<p class="status">Manuskript abgeschlossen · Veröffentlichung bei Amazon in Vorbereitung</p>
+<a class="buy-btn" href="mailto:manfred.schmidt.info@gmx.net?subject=Zwei%20Zuhause%20%E2%80%93%20bitte%20informieren%2C%20wenn%20das%20Buch%20erscheint">Benachrichtigen, wenn es erscheint</a>
+</div>
+<div class="zz-aufbau">
+<span class="eyebrow">So ist jedes Kapitel aufgebaut</span>
+<div class="zz-teil"><strong>Die Szene</strong><span>Leon erzählt, was passiert – in seinen eigenen Worten.</span></div>
+<div class="zz-teil"><strong>Ein Satz, der bleibt</strong><span>Ein Gedanke zum Mitnehmen und Weiterdenken.</span></div>
+<div class="zz-teil"><strong>Für die Eltern</strong><span>Was in einem Kind in dieser Situation vorgehen kann – psychologisch fundiert erklärt.</span></div>
+<div class="zz-fakten">21 Kapitel in drei Akten<br>Erzählt von Leon, 11<br>Schauplatz: Bergen, Norwegen</div>
 </div>
 </div>
 </section>
