@@ -279,6 +279,17 @@ font-size: 0.76rem;
 color: var(--ink-soft);
 }
 .book-card .fuer-wen strong { color: var(--ink); font-weight: 600; }
+.book-card .fuer-wen-liste {
+margin: 8px 0 0;
+padding: 0;
+list-style: none;
+font-size: 0.9rem;
+color: var(--ink-soft);
+line-height: 1.5;
+}
+.book-card .fuer-wen-liste li { margin-top: 6px; padding-left: 14px; position: relative; }
+.book-card .fuer-wen-liste li::before { content: "–"; position: absolute; left: 0; }
+.book-card .fuer-wen-liste em { font-style: italic; color: var(--ink); }
 .book-card .cta {
 margin-top: 28px;
 font-family: 'IBM Plex Mono', monospace;
@@ -638,7 +649,12 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <div class="subtitle">Über die Sehnsucht wegzugehen – und die Klarheit, die eigene Entscheidung zu finden</div>
 <blockquote>„Ich bin 69 Jahre alt. Und ich bin, ganz ehrlich, immer noch bereit auszuwandern."</blockquote>
 <p class="desc">Fünf Weggabelungen über sechs Jahrzehnte – eine wahre Geschichte, verbunden mit psychologischen Konzepten wie Verlustaversion und dem Sunk-Cost-Effekt. Mit Reflexionsübungen für den eigenen Weg.</p>
-<p class="fuer-wen"><strong>Für wen:</strong> wer die eigene Sehnsucht behutsam verstehen will.</p>
+<p class="fuer-wen"><strong>Für wen:</strong></p>
+<ul class="fuer-wen-liste">
+<li>Menschen ab der Lebensmitte, die schon lange von einem Leben anderswo träumen und es nie gewagt haben. <em>„Hätte ich damals doch …“</em></li>
+<li>Alle, die im Ruhestand ans Auswandern denken und ehrlich prüfen wollen, ob es jetzt noch dran ist.</li>
+<li>Eltern und Angehörige, die verstehen möchten, warum ein geliebter Mensch weggehen will – auch als Geschenk.</li>
+</ul>
 <a class="buy-btn" href="https://www.amazon.de/dp/B0HGH9VHD4" target="_blank" rel="noopener">Jetzt bei Amazon</a>
 <p class="status">Erschienen bei KDP</p>
 </article>
@@ -648,7 +664,12 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <div class="subtitle">Warum Auswandern keine Flucht ist – und Bleiben keine Sicherheit</div>
 <blockquote>„Nicht zu gehen, ist auch eine Entscheidung. Nur eine, für die man sich seltener rechtfertigen muss."</blockquote>
 <p class="desc">Kein Ratgeber, sondern eine Grenze. Sechzehn kurze, schonungslose Kapitel über Verantwortung, Ausreden und die Frage, was Ihre Entscheidung mit anderen macht.</p>
-<p class="fuer-wen"><strong>Für wen:</strong> wer schon zu oft sanft behandelt wurde und einen Weckruf braucht.</p>
+<p class="fuer-wen"><strong>Für wen:</strong></p>
+<ul class="fuer-wen-liste">
+<li>Alle, die vor allem eines wollen: hier weg. Und bereit sind zu prüfen, wovon genau. <em>„Ich will nur noch weg.“</em></li>
+<li>Eltern, die mit Kindern auswandern wollen und wissen, dass ihre Entscheidung nicht nur sie selbst betrifft.</li>
+<li>Wer keine Ermutigung sucht, sondern einen ehrlichen Weckruf.</li>
+</ul>
 <a class="buy-btn" href="https://www.amazon.de/dp/B0HGM8XXXG" target="_blank" rel="noopener">Jetzt bei Amazon</a>
 <p class="status">Erschienen bei KDP</p>
 </article>
@@ -658,7 +679,12 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <div class="subtitle">Die schonungslose Diagnose, bevor du dein Leben umpackst</div>
 <blockquote>„Der reine, unverfälschte Ton Ihrer eigenen Wahrheit."</blockquote>
 <p class="desc">Was wirklich mitreist, wenn wir gehen: unsere ungelösten Konflikte, unsere leeren Träume. Mit einem eigenen Kapitel für digitale Nomaden und multilokale Leben.</p>
-<p class="fuer-wen"><strong>Für wen:</strong> wer in Bildern und Metaphern denkt, nicht in Checklisten.</p>
+<p class="fuer-wen"><strong>Für wen:</strong></p>
+<ul class="fuer-wen-liste">
+<li>Menschen mit einer konkreten Option – Jobangebot, Partner im Ausland, ortsunabhängige Arbeit –, die vor dem Schritt klar sehen wollen. <em>„Die Chance ist da. Warum zögere ich?“</em></li>
+<li>Deutsche, die schon im Ausland leben und sich fragen: bleiben oder zurück?</li>
+<li>Digitale Nomaden und alle, die zurückgekehrt sind und ihren Weg einordnen wollen.</li>
+</ul>
 <a class="buy-btn" href="https://amzn.eu/d/09xxyELi" target="_blank" rel="noopener">Jetzt bei Amazon</a>
 <p class="status">Erschienen bei ROMEON Verlag</p>
 </article>
@@ -670,6 +696,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <div class="subtitle">Ein Buch für Kinder, die umziehen müssen – und ihre Eltern</div>
 <p class="desc">Leon ist elf, als seine Familie nach Bergen in Norwegen auswandert. In 21 Kapiteln erzählt er selbst, was dieser Schritt mit ihm macht: mit dem Abschied, der Wut, dem fremden Alltag – und mit der Frage, ob man zwei Zuhause haben kann.</p>
 <p class="desc">Kinder werden bei einem Umzug oft als „flexibel“ abgetan. Für sie kann er den Verlust von Freunden, Sprache und Vertrautem bedeuten. Geschrieben im Geist von „Dies ist kein Aufbruch“: ehrlich und ohne Beschönigung, diesmal aus der Sicht derer, die bei der Entscheidung meist nicht gefragt werden. Ein Buch, das Kinder und Eltern gemeinsam lesen können – um einander besser zu verstehen.</p>
+<p class="desc"><strong>Für wen:</strong> Familien, die einen Umzug ins Ausland planen oder gerade erleben – für die Kinder selbst und für Eltern, Großeltern und Erzieher, die sie dabei begleiten.</p>
 <p class="status">Manuskript abgeschlossen · Veröffentlichung bei Amazon in Vorbereitung</p>
 <a class="buy-btn" href="mailto:manfred.schmidt.info@gmx.net?subject=Zwei%20Zuhause%20%E2%80%93%20bitte%20informieren%2C%20wenn%20das%20Buch%20erscheint">Benachrichtigen, wenn es erscheint</a>
 </div>
