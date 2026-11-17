@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. Manfred Schmidt — Gehen. Bleiben. Sich selbst begegnen.</title>
-<meta name="description" content="Drei Bücher von Dr. Manfred Schmidt über die Sehnsucht wegzugehen und die Klarheit, die eigene Entscheidung zu finden – und „Zwei Zuhause“, ein Buch für Kinder, die umziehen müssen, und ihre Eltern.">
+<meta name="description" content="Vier Bücher von Dr. Manfred Schmidt über die Sehnsucht wegzugehen, die Klarheit, die eigene Entscheidung zu finden – und darüber, was ein Umzug für Kinder bedeutet.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
@@ -18,6 +18,7 @@
 --gold: #a8641f;
 --rust: #8b3f32;
 --sage: #3f5a4a;
+--sea: #3d5f78;
 --mist: #6b6052;
 --line: rgba(36,31,26,0.14);
 --dark-bg: #1b1815;
@@ -151,6 +152,7 @@ stroke-linecap: round;
 .path-gold { stroke: var(--gold); }
 .path-rust { stroke: var(--rust); }
 .path-sage { stroke: var(--sage); }
+.path-sea { stroke: var(--sea); }
 .crossroads .draw {
 stroke-dasharray: 900;
 stroke-dashoffset: 900;
@@ -185,6 +187,7 @@ color: var(--ink);
 .leitidee p.big .accent-gold { color: var(--gold); }
 .leitidee p.big .accent-rust { color: var(--rust); }
 .leitidee p.big .accent-sage { color: var(--sage); }
+.leitidee p.big .accent-sea { color: var(--sea); }
 /* ---------- THEMA (mehr als Auswandern) ---------- */
 .thema {
 padding: 20px 0 80px;
@@ -214,7 +217,7 @@ color: var(--ink);
 .book-grid {
 margin-top: 56px;
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(2, 1fr);
 gap: 2px;
 background: var(--line);
 }
@@ -222,6 +225,7 @@ background: var(--line);
 .book-grid { grid-template-columns: 1fr; }
 }
 .book-card {
+scroll-margin-top: 80px;
 background: var(--card);
 padding: 40px 32px 36px;
 display: flex;
@@ -241,6 +245,7 @@ border: 1px solid;
 .book-card.gold .tag { color: var(--gold); border-color: var(--gold); }
 .book-card.rust .tag { color: var(--rust); border-color: var(--rust); }
 .book-card.sage .tag { color: var(--sage); border-color: var(--sage); }
+.book-card.sea .tag { color: var(--sea); border-color: var(--sea); }
 .book-card h3 {
 margin-top: 24px;
 font-size: 1.5rem;
@@ -266,6 +271,7 @@ color: var(--ink);
 .book-card.gold blockquote { border-color: var(--gold); }
 .book-card.rust blockquote { border-color: var(--rust); }
 .book-card.sage blockquote { border-color: var(--sage); }
+.book-card.sea blockquote { border-color: var(--sea); }
 .book-card .desc {
 margin-top: 22px;
 color: var(--ink-soft);
@@ -320,6 +326,15 @@ width: fit-content;
 .book-card.gold .buy-btn { background: var(--gold); }
 .book-card.rust .buy-btn { background: var(--rust); }
 .book-card.sage .buy-btn { background: var(--sage); }
+.book-card.sea .buy-btn { background: var(--sea); }
+.book-card .cover {
+width: 150px;
+height: auto;
+display: block;
+margin-bottom: 26px;
+box-shadow: 0 10px 24px rgba(36,31,26,0.18), 0 2px 6px rgba(36,31,26,0.12);
+border-radius: 2px;
+}
 .ausblick {
 margin-top: 2px;
 background: var(--paper-dim);
@@ -352,113 +367,6 @@ margin-top: 16px;
 font-family: 'IBM Plex Mono', monospace;
 font-size: 0.76rem;
 color: var(--rust);
-}
-/* ---------- NEU: ZWEI ZUHAUSE ---------- */
-.neu-banner {
-display: inline-flex;
-align-items: center;
-gap: 10px;
-margin-bottom: 26px;
-padding: 7px 14px 7px 8px;
-border: 1px solid var(--sage);
-border-radius: 30px;
-text-decoration: none;
-font-size: 0.92rem;
-color: var(--ink);
-background: rgba(63,90,74,0.06);
-transition: background 0.2s;
-}
-.neu-banner:hover { background: rgba(63,90,74,0.13); }
-.neu-banner .pill {
-font-family: 'IBM Plex Mono', monospace;
-font-size: 0.68rem;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-background: var(--sage);
-color: #fdf9f1;
-padding: 3px 9px;
-border-radius: 20px;
-}
-.zwei-zuhause {
-scroll-margin-top: 80px;
-margin-top: 2px;
-background: var(--card);
-border-top: 4px solid var(--sage);
-padding: 56px 48px 52px;
-display: grid;
-grid-template-columns: 1.3fr 1fr;
-gap: 56px;
-}
-@media (max-width: 900px) {
-.zwei-zuhause { grid-template-columns: 1fr; gap: 36px; padding: 44px 28px; }
-}
-.zwei-zuhause .eyebrow { color: var(--sage); display: block; margin-bottom: 16px; opacity: 1; }
-.zwei-zuhause h3 {
-font-size: clamp(2rem, 4.2vw, 2.8rem);
-color: var(--ink);
-}
-.zwei-zuhause .subtitle {
-margin-top: 10px;
-font-family: 'Fraunces', serif;
-font-style: italic;
-font-size: 1.15rem;
-color: var(--sage);
-}
-.zwei-zuhause .desc {
-margin-top: 22px;
-color: var(--ink-soft);
-font-size: 1rem;
-}
-.zwei-zuhause .desc + .desc { margin-top: 14px; }
-.zwei-zuhause .status {
-margin-top: 24px;
-font-family: 'IBM Plex Mono', monospace;
-font-size: 0.76rem;
-color: var(--sage);
-}
-.zwei-zuhause .buy-btn {
-margin-top: 22px;
-display: inline-block;
-text-decoration: none;
-font-family: 'IBM Plex Mono', monospace;
-font-size: 0.8rem;
-letter-spacing: 0.03em;
-padding: 12px 20px;
-border-radius: 2px;
-background: var(--sage);
-color: #fdf9f1;
-}
-.zz-aufbau {
-align-self: center;
-border-left: 1px solid var(--line);
-padding-left: 40px;
-}
-@media (max-width: 900px) {
-.zz-aufbau { border-left: none; padding-left: 0; border-top: 1px solid var(--line); padding-top: 30px; }
-}
-.zz-aufbau .eyebrow { color: var(--ink-soft); opacity: 0.8; }
-.zz-teil {
-margin-top: 20px;
-}
-.zz-teil strong {
-display: block;
-font-family: 'Fraunces', serif;
-font-weight: 600;
-font-size: 1.12rem;
-color: var(--ink);
-}
-.zz-teil span {
-display: block;
-margin-top: 3px;
-font-size: 0.93rem;
-color: var(--ink-soft);
-}
-.zz-fakten {
-margin-top: 28px;
-font-family: 'IBM Plex Mono', monospace;
-font-size: 0.74rem;
-color: var(--ink-soft);
-line-height: 1.9;
 }
 /* ---------- MANIFEST ---------- */
 .manifest {
@@ -593,7 +501,6 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <div class="brand">Dr. Manfred Schmidt</div>
 <div class="navlinks">
 <a href="#buecher">Bücher</a>
-<a href="#zwei-zuhause">Neu: Zwei Zuhause</a>
 <a href="#manifest">Manifest</a>
 <a href="#autor">Autor</a>
 <a href="#kontakt">Kontakt</a>
@@ -602,32 +509,34 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 </nav>
 <header class="hero">
 <div class="wrap">
-<a class="neu-banner" href="#zwei-zuhause"><span class="pill">Neu</span>„Zwei Zuhause“ – das Kinderbuch ist erschienen →</a>
-<span class="eyebrow">Drei Bücher · eine Frage</span>
+<span class="eyebrow">Vier Bücher · eine Frage</span>
 <h1>Gehen. Bleiben.<br><em>Sich selbst</em> begegnen.</h1>
-<p class="lede">Drei Bücher über die leise Sehnsucht, die viele von uns manchmal ergreift – und über die Klarheit, die eigene Entscheidung zu finden. Kein Ratgeber mit Checklisten. Drei sehr unterschiedliche Wege dorthin.</p>
+<p class="lede">Vier Bücher über die leise Sehnsucht, die viele von uns manchmal ergreift, über die Klarheit, die eigene Entscheidung zu finden – und darüber, was sie für die Kinder bedeutet, die mitgehen. Kein Ratgeber mit Checklisten. Vier sehr unterschiedliche Wege dorthin.</p>
 <div class="hero-cta">
-<a href="#buecher" class="btn btn-primary">Die drei Bücher ansehen</a>
+<a href="#buecher" class="btn btn-primary">Die vier Bücher ansehen</a>
 <a href="#autor" class="btn btn-ghost">Über den Autor</a>
 </div>
-<svg class="crossroads" viewBox="0 0 1040 220" aria-hidden="true">
-<path class="draw" d="M 40 200 C 220 200, 260 130, 420 110" stroke="rgba(36,31,26,0.3)"/>
-<path class="draw d1 path-gold" d="M 420 110 C 520 96, 620 60, 760 40"/>
-<path class="draw d2 path-rust" d="M 420 110 C 520 130, 620 165, 760 178"/>
-<path class="draw d3 path-sage" d="M 420 110 C 500 112, 580 112, 660 112 C 710 112, 740 110, 760 108"/>
-<circle cx="420" cy="110" r="4" fill="var(--ink)"/>
-<circle cx="760" cy="40" r="4" style="fill:var(--gold)"/>
-<circle cx="760" cy="178" r="4" style="fill:var(--rust)"/>
-<circle cx="760" cy="108" r="4" style="fill:var(--sage)"/>
-<text x="775" y="44">Fast ausgewandert</text>
-<text x="775" y="182">Dies ist kein Aufbruch</text>
-<text x="775" y="112">Das Vergrößerungsglas</text>
+<svg class="crossroads" viewBox="0 0 1040 230" aria-hidden="true">
+<path class="draw" d="M 40 210 C 220 210, 260 120, 420 115" stroke="rgba(36,31,26,0.3)"/>
+<path class="draw d1 path-gold" d="M 420 115 C 520 100, 620 45, 760 30"/>
+<path class="draw d2 path-sage" d="M 420 115 C 520 108, 640 90, 760 88"/>
+<path class="draw d3 path-sea" d="M 420 115 C 520 122, 640 142, 760 146"/>
+<path class="draw d3 path-rust" d="M 420 115 C 520 135, 620 190, 760 204"/>
+<circle cx="420" cy="115" r="4" fill="var(--ink)"/>
+<circle cx="760" cy="30" r="4" style="fill:var(--gold)"/>
+<circle cx="760" cy="88" r="4" style="fill:var(--sage)"/>
+<circle cx="760" cy="146" r="4" style="fill:var(--sea)"/>
+<circle cx="760" cy="204" r="4" style="fill:var(--rust)"/>
+<text x="775" y="34">Fast ausgewandert</text>
+<text x="775" y="92">Das Vergrößerungsglas</text>
+<text x="775" y="150">Zwei Zuhause</text>
+<text x="775" y="208">Dies ist kein Aufbruch</text>
 </svg>
 </div>
 </header>
 <section class="leitidee">
 <div class="wrap reveal">
-<p class="big">Drei Bücher, eine Frage: <span class="accent-gold">Was hält uns wirklich?</span> Und was würde uns wirklich tragen? Jedes Buch nähert sich dieser Frage auf einem eigenen Weg – <span class="accent-rust">mal konfrontativ</span>, <span class="accent-sage">mal poetisch</span>, mal als ehrlich erzählte eigene Geschichte.</p>
+<p class="big">Vier Bücher, eine Frage: <span class="accent-gold">Was hält uns wirklich?</span> Und was würde uns wirklich tragen? Jedes Buch nähert sich dieser Frage auf einem eigenen Weg – <span class="accent-rust">mal konfrontativ</span>, <span class="accent-sage">mal poetisch</span>, mal als ehrlich erzählte eigene Geschichte, <span class="accent-sea">mal mit den Augen eines Kindes</span>.</p>
 </div>
 </section>
 <section class="thema">
@@ -640,10 +549,11 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <section class="books" id="buecher">
 <div class="wrap">
 <span class="eyebrow">Die Reihe</span>
-<h2 class="reveal">Drei Stimmen für dieselbe Lebensfrage</h2>
+<h2 class="reveal">Vier Stimmen für dieselbe Lebensfrage</h2>
 </div>
 <div class="book-grid reveal">
 <article class="book-card gold">
+<img class="cover" src="cover-fast-ausgewandert.jpg" alt="Cover von „Fast ausgewandert“" loading="lazy" onerror="this.remove()">
 <span class="tag">Erzählend · warm</span>
 <h3>Fast ausgewandert</h3>
 <div class="subtitle">Über die Sehnsucht wegzugehen – und die Klarheit, die eigene Entscheidung zu finden</div>
@@ -659,6 +569,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <p class="status">Erschienen bei KDP</p>
 </article>
 <article class="book-card rust">
+<img class="cover" src="cover-dies-ist-kein-aufbruch.jpg" alt="Cover von „Dies ist kein Aufbruch“" loading="lazy" onerror="this.remove()">
 <span class="tag">Konfrontativ · direkt</span>
 <h3>Dies ist kein Aufbruch</h3>
 <div class="subtitle">Warum Auswandern keine Flucht ist – und Bleiben keine Sicherheit</div>
@@ -674,6 +585,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <p class="status">Erschienen bei KDP</p>
 </article>
 <article class="book-card sage">
+<img class="cover" src="cover-das-vergroesserungsglas.jpg" alt="Cover von „Das Vergrößerungsglas“" loading="lazy" onerror="this.remove()">
 <span class="tag">Poetisch · bildreich</span>
 <h3>Das Vergrößerungsglas</h3>
 <div class="subtitle">Die schonungslose Diagnose, bevor du dein Leben umpackst</div>
@@ -688,25 +600,22 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <a class="buy-btn" href="https://amzn.eu/d/09xxyELi" target="_blank" rel="noopener">Jetzt bei Amazon</a>
 <p class="status">Erschienen bei ROMEON Verlag</p>
 </article>
-</div>
-<div class="zwei-zuhause reveal" id="zwei-zuhause">
-<div>
-<span class="eyebrow">Neu · Jetzt erschienen</span>
+<article class="book-card sea" id="zwei-zuhause">
+<img class="cover" src="cover-zwei-zuhause.jpg" alt="Cover von „Zwei Zuhause“" loading="lazy" onerror="this.remove()">
+<span class="tag">Erzählend · für Kinder &amp; Eltern</span>
 <h3>Zwei Zuhause</h3>
 <div class="subtitle">Ein Buch für Kinder, die umziehen müssen – und ihre Eltern</div>
-<p class="desc">Leon ist elf, als seine Familie nach Bergen in Norwegen auswandert. In 21 Kapiteln erzählt er selbst, was dieser Schritt mit ihm macht: mit dem Abschied, der Wut, dem fremden Alltag – und mit der Frage, ob man zwei Zuhause haben kann.</p>
-<p class="desc">Kinder werden bei einem Umzug oft als „flexibel“ abgetan. Für sie kann er den Verlust von Freunden, Sprache und Vertrautem bedeuten. Geschrieben im Geist von „Dies ist kein Aufbruch“: ehrlich und ohne Beschönigung, diesmal aus der Sicht derer, die bei der Entscheidung meist nicht gefragt werden. Ein Buch, das Kinder und Eltern gemeinsam lesen können – um einander besser zu verstehen.</p>
-<p class="desc"><strong>Für wen:</strong> Familien, die einen Umzug ins Ausland planen oder gerade erleben – für die Kinder selbst und für Eltern, Großeltern und Erzieher, die sie dabei begleiten.</p>
+<blockquote>„Ein Zuhause ist nicht ein Ort. Ein Zuhause ist, wo jemand fragt."</blockquote>
+<p class="desc">Leon ist elf, als seine Familie nach Bergen in Norwegen auswandert. In 21 Kapiteln erzählt er, was dieser Schritt mit ihm macht – geschrieben im Geist von „Dies ist kein Aufbruch“, diesmal aus der Sicht derer, die meist nicht gefragt werden. Nach jedem Kapitel: ein Satz zum Darüber-Reden und eine psychologisch fundierte Seite für die Eltern.</p>
+<p class="fuer-wen"><strong>Für wen:</strong></p>
+<ul class="fuer-wen-liste">
+<li>Kinder ab 10 und Jugendliche, deren Familie umzieht oder auswandert. <em>„Niemand hat mich gefragt.“</em></li>
+<li>Eltern, die verstehen wollen, was in ihrem Kind vorgeht – und was sie ihm sagen können.</li>
+<li>Großeltern, Lehrkräfte und Erzieher, die Kinder durch einen Umzug begleiten.</li>
+</ul>
 <a class="buy-btn" href="https://amzn.eu/d/097U6Rqm" target="_blank" rel="noopener">Jetzt bei Amazon</a>
 <p class="status">Erschienen bei KDP</p>
-</div>
-<div class="zz-aufbau">
-<span class="eyebrow">So ist jedes Kapitel aufgebaut</span>
-<div class="zz-teil"><strong>Die Szene</strong><span>Leon erzählt, was passiert – in seinen eigenen Worten.</span></div>
-<div class="zz-teil"><strong>Ein Satz, der bleibt</strong><span>Ein Gedanke zum Mitnehmen und Weiterdenken.</span></div>
-<div class="zz-teil"><strong>Für die Eltern</strong><span>Was in einem Kind in dieser Situation vorgehen kann – psychologisch fundiert erklärt.</span></div>
-<div class="zz-fakten">21 Kapitel in drei Akten<br>Erzählt von Leon, 11<br>Schauplatz: Bergen, Norwegen</div>
-</div>
+</article>
 </div>
 </section>
 <section class="manifest" id="manifest">
@@ -714,7 +623,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <div class="reveal">
 <span class="eyebrow">Kostenloser Download</span>
 <h2>Der Anfang von allem: ein Manifest in 15 kurzen Kapiteln</h2>
-<p class="desc">„Das ist (k)ein Auswanderbuch" war der erste Text, lange bevor die drei Bücher entstanden – auf das Wesentliche reduziert, ohne Umwege. Kein Ratgeber. Ein Filter, in 10 Minuten gelesen.</p>
+<p class="desc">„Das ist (k)ein Auswanderbuch" war der erste Text, lange bevor die vier Bücher entstanden – auf das Wesentliche reduziert, ohne Umwege. Kein Ratgeber. Ein Filter, in 10 Minuten gelesen.</p>
 <div class="hero-cta">
 <a class="btn btn-primary" href="Manifest - Das ist (k)ein Auswanderbuch (hell)_1.pdf" target="_blank" rel="noopener">PDF ansehen &amp; herunterladen</a>
 </div>
