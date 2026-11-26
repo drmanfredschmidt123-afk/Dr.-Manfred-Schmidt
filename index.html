@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. Manfred Schmidt — Gehen. Bleiben. Sich selbst begegnen.</title>
 <meta name="description" content="Vier Bücher von Dr. Manfred Schmidt über die Sehnsucht wegzugehen, die Klarheit, die eigene Entscheidung zu finden – und darüber, was ein Umzug für Kinder bedeutet.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="fonts.css" rel="stylesheet">
 <style>
 :root {
 --ink: #241f1a;
@@ -404,6 +402,11 @@ padding-left: 20px;
 color: var(--dark-text);
 }
 .manifest-quote span { display: block; opacity: 0.9; }
+.manifest-quote .quelle { margin-top: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; line-height: 1.5; color: var(--dark-mist); }
+.weggabelungen-titel { margin-top: 34px; font-family: 'IBM Plex Mono', monospace; font-size: 0.76rem; color: var(--ink-soft); }
+.weggabelungen-titel + .weggabelungen { margin-top: 12px; }
+footer a { text-decoration: none; border-bottom: 1px solid currentColor; }
+footer .legal { display: flex; gap: 18px; }
 /* ---------- AUTHOR ---------- */
 .author {
 background: var(--paper-dim);
@@ -511,7 +514,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <div class="wrap">
 <span class="eyebrow">Vier Bücher · eine Frage</span>
 <h1>Gehen. Bleiben.<br><em>Sich selbst</em> begegnen.</h1>
-<p class="lede">Vier Bücher über die leise Sehnsucht, die viele von uns manchmal ergreift, über die Klarheit, die eigene Entscheidung zu finden – und darüber, was sie für die Kinder bedeutet, die mitgehen. Kein Ratgeber mit Checklisten. Vier sehr unterschiedliche Wege dorthin.</p>
+<p class="lede">Vier Bücher über die leise Sehnsucht, die viele von uns manchmal ergreift, über die Klarheit, die eigene Entscheidung zu finden – und darüber, was sie für die Kinder bedeutet, die mitgehen. Keine Checklisten, keine Erfolgsversprechen. Vier sehr unterschiedliche Wege dorthin.</p>
 <div class="hero-cta">
 <a href="#buecher" class="btn btn-primary">Die vier Bücher ansehen</a>
 <a href="#autor" class="btn btn-ghost">Über den Autor</a>
@@ -543,7 +546,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <div class="wrap reveal">
 <span class="eyebrow">Worum es wirklich geht</span>
 <h2>Mehr als Bücher übers Auswandern</h2>
-<p class="desc">Am Beispiel einer der einschneidendsten Lebensentscheidungen – wegzugehen oder zu bleiben – zeige ich, wie man sich einer schwierigen Entscheidung psychologisch fundiert nähert: ehrlich, ohne Ausreden, mit Klarheit über die eigenen Motive. Das Ergebnis ist eine Lösung, die trägt, weil sie auf Verantwortung statt auf Wunschdenken beruht. Die Herangehensweise lässt sich auf andere große Lebensentscheidungen übertragen – Berufswechsel, Ortswechsel, Neuanfänge jeder Art.</p>
+<p class="desc">Am Beispiel einer der einschneidendsten Lebensentscheidungen – wegzugehen oder zu bleiben – zeige ich, wie man sich einer schwierigen Entscheidung psychologisch fundiert nähert: ehrlich, ohne Ausreden, mit Klarheit über die eigenen Motive. So entsteht eine Entscheidung, die tragen kann, weil sie auf Verantwortung statt auf Wunschdenken beruht – egal, ob sie Gehen oder Bleiben heißt. Die Herangehensweise lässt sich auf andere große Lebensentscheidungen übertragen – Berufswechsel, Ortswechsel, Neuanfänge jeder Art.</p>
 </div>
 </section>
 <section class="books" id="buecher">
@@ -557,7 +560,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <span class="tag">Erzählend · warm</span>
 <h3>Fast ausgewandert</h3>
 <div class="subtitle">Über die Sehnsucht wegzugehen – und die Klarheit, die eigene Entscheidung zu finden</div>
-<blockquote>„Ich bin 69 Jahre alt. Und ich bin, ganz ehrlich, immer noch bereit auszuwandern."</blockquote>
+<blockquote>„Ich bin 69 Jahre alt. Und ich bin, ganz ehrlich, immer noch bereit auszuwandern.“</blockquote>
 <p class="desc">Fünf Weggabelungen über sechs Jahrzehnte – eine wahre Geschichte, verbunden mit psychologischen Konzepten wie Verlustaversion und dem Sunk-Cost-Effekt. Mit Reflexionsübungen für den eigenen Weg.</p>
 <p class="fuer-wen"><strong>Für wen:</strong></p>
 <ul class="fuer-wen-liste">
@@ -573,7 +576,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <span class="tag">Konfrontativ · direkt</span>
 <h3>Dies ist kein Aufbruch</h3>
 <div class="subtitle">Warum Auswandern keine Flucht ist – und Bleiben keine Sicherheit</div>
-<blockquote>„Nicht zu gehen, ist auch eine Entscheidung. Nur eine, für die man sich seltener rechtfertigen muss."</blockquote>
+<blockquote>„Nicht zu gehen, ist auch eine Entscheidung. Nur eine, für die man sich seltener rechtfertigen muss.“</blockquote>
 <p class="desc">Kein Ratgeber, sondern eine Grenze. Sechzehn kurze, schonungslose Kapitel über Verantwortung, Ausreden und die Frage, was Ihre Entscheidung mit anderen macht.</p>
 <p class="fuer-wen"><strong>Für wen:</strong></p>
 <ul class="fuer-wen-liste">
@@ -589,7 +592,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <span class="tag">Poetisch · bildreich</span>
 <h3>Das Vergrößerungsglas</h3>
 <div class="subtitle">Die schonungslose Diagnose, bevor du dein Leben umpackst</div>
-<blockquote>„Der reine, unverfälschte Ton Ihrer eigenen Wahrheit."</blockquote>
+<blockquote>„Der reine, unverfälschte Ton Ihrer eigenen Wahrheit.“</blockquote>
 <p class="desc">Was wirklich mitreist, wenn wir gehen: unsere ungelösten Konflikte, unsere leeren Träume. Mit einem eigenen Kapitel für digitale Nomaden und multilokale Leben.</p>
 <p class="fuer-wen"><strong>Für wen:</strong></p>
 <ul class="fuer-wen-liste">
@@ -605,7 +608,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <span class="tag">Erzählend · für Kinder &amp; Eltern</span>
 <h3>Zwei Zuhause</h3>
 <div class="subtitle">Ein Buch für Kinder, die umziehen müssen – und ihre Eltern</div>
-<blockquote>„Ein Zuhause ist nicht ein Ort. Ein Zuhause ist, wo jemand fragt."</blockquote>
+<blockquote>„Ein Zuhause ist nicht ein Ort. Ein Zuhause ist, wo jemand fragt.“</blockquote>
 <p class="desc">Leon ist elf, als seine Familie nach Bergen in Norwegen auswandert. In 21 Kapiteln erzählt er, was dieser Schritt mit ihm macht – geschrieben im Geist von „Dies ist kein Aufbruch“, diesmal aus der Sicht derer, die meist nicht gefragt werden. Nach jedem Kapitel: ein Satz zum Darüber-Reden und eine psychologisch fundierte Seite für die Eltern.</p>
 <p class="fuer-wen"><strong>Für wen:</strong></p>
 <ul class="fuer-wen-liste">
@@ -623,7 +626,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <div class="reveal">
 <span class="eyebrow">Kostenloser Download</span>
 <h2>Der Anfang von allem: ein Manifest in 15 kurzen Kapiteln</h2>
-<p class="desc">„Das ist (k)ein Auswanderbuch" war der erste Text, lange bevor die vier Bücher entstanden – auf das Wesentliche reduziert, ohne Umwege. Kein Ratgeber. Ein Filter, in 10 Minuten gelesen.</p>
+<p class="desc">„Das ist (k)ein Auswanderbuch“ war der erste Text, lange bevor die vier Bücher entstanden – auf das Wesentliche reduziert, ohne Umwege. Kein Ratgeber. Ein Filter, in 10 Minuten gelesen.</p>
 <div class="hero-cta">
 <a class="btn btn-primary" href="Manifest - Das ist (k)ein Auswanderbuch (hell)_1.pdf" target="_blank" rel="noopener">PDF ansehen &amp; herunterladen</a>
 </div>
@@ -636,6 +639,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <span>&nbsp;</span>
 <span>Wenn du Antworten suchst, leg es weg.</span>
 <span>Wenn du Verantwortung suchst, lies weiter.</span>
+<span class="quelle">– aus dem Manifest „Das ist (k)ein Auswanderbuch“</span>
 </div>
 </div>
 </section>
@@ -646,11 +650,12 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <span class="eyebrow">Der Autor</span>
 <h2>Dr. Manfred Schmidt</h2>
 <div class="author-bio" style="margin-top:22px;">
-<p style="font-family:'Fraunces',serif; font-style:italic; font-size:1.15rem; line-height:1.55; color:var(--ink);">„Ich bin kein Reiseleiter ins Glück. Ich bin kein Vermittler von Traumstränden. Und ich werde Ihnen nicht versprechen, dass ‚alles gut wird', wenn Sie nur den richtigen Ort finden."</p>
-<p>Ich beschäftige mich als Autor mit der menschlichen Psyche in Zeiten des Umbruchs – psychologisch fundiert, aus meiner Ausbildung in Entwicklungspsychologie und Diagnostik, und aus eigener, oft unbequemer Erfahrung. Man kann nicht vor sich selbst weglaufen: Ein neuer Pass, eine neue Sprache oder ein neuer Horizont lösen keine inneren Konflikte. Sie machen sie nur sichtbarer.</p>
+<p style="font-family:'Fraunces',serif; font-style:italic; font-size:1.15rem; line-height:1.55; color:var(--ink);">„Ich bin kein Reiseleiter ins Glück. Ich bin kein Vermittler von Traumstränden. Und ich werde Ihnen nicht versprechen, dass ‚alles gut wird‘, wenn Sie nur den richtigen Ort finden.“</p>
+<p>Ich beschäftige mich als Autor mit der menschlichen Psyche in Zeiten des Umbruchs – psychologisch fundiert, aus meiner Promotion in Entwicklungspsychologie und Diagnostik, und aus eigener, oft unbequemer Erfahrung. Man kann nicht vor sich selbst weglaufen: Ein neuer Pass, eine neue Sprache oder ein neuer Horizont lösen keine inneren Konflikte. Sie machen sie nur sichtbarer.</p>
 <p>Ich bin als Bauernkind aufgewachsen und trug schon als Kind den Traum in mir, so weit wie möglich wegzugehen. Im Laufe meines Lebens boten sich mir mehrere reale Chancen dazu – ich habe mich jedes Mal bewusst dagegen entschieden.</p>
-<p>Beruflich war ich zunächst als Lehrer für Mathematik und Chemie tätig, promovierte anschließend in Pädagogischer Psychologie mit Schwerpunkt Entwicklungspsychologie und Diagnostik, und arbeitete danach viele Jahre als Vermögensberater. Heute, im Ruhestand, beschäftigt mich die Frage, die mich mein Leben lang begleitet hat, intensiver denn je: Was braucht es wirklich, um eine große Entscheidung zu treffen und dahinter zu stehen? Ich lebe in der Brüder-Grimm-Stadt Steinau an der Straße.</p>
+<p>Beruflich war ich zunächst als Lehrer für Mathematik und Chemie tätig, promovierte anschließend in Pädagogischer Psychologie mit Schwerpunkt Entwicklungspsychologie und Diagnostik, und begleitete danach über drei Jahrzehnte Menschen in meiner eigenen Praxis für Finanz- und Lebensplanungsberatung. Heute, im Ruhestand, beschäftigt mich die Frage, die mich mein Leben lang begleitet hat, intensiver denn je: Was braucht es wirklich, um eine große Entscheidung zu treffen und dahinter zu stehen? Ich lebe in der Brüder-Grimm-Stadt Steinau an der Straße.</p>
 </div>
+<p class="weggabelungen-titel">Fünf Weggabelungen meines Lebens – erzählt in „Fast ausgewandert“:</p>
 <div class="weggabelungen">
 <div class="weggabelung">1 · Budapest</div>
 <div class="weggabelung">2 · Moskau</div>
@@ -663,7 +668,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 </section>
 <section class="contact" id="kontakt">
 <div class="wrap reveal">
-<span class="eyebrow">Auf dem Laufenden bleiben</span>
+<span class="eyebrow">Schreiben Sie mir</span>
 <h2>Fragen, Feedback oder einfach Hallo sagen</h2>
 <p>Kein Newsletter-Spam – nur eine kurze Nachricht direkt an mich.</p>
 <a class="btn btn-primary" href="mailto:manfred.schmidt.info@gmx.net?subject=Nachricht%20%C3%BCber%20die%20Homepage">manfred.schmidt.info@gmx.net</a>
@@ -672,7 +677,7 @@ transition: opacity 0.7s ease, transform 0.7s ease;
 <footer>
 <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;">
 <span>© 2026 Dr. Manfred Schmidt</span>
-<span>Steinau an der Straße</span>
+<span class="legal"><span>Steinau an der Straße</span><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></span>
 </div>
 </footer>
 <script>
